@@ -1,0 +1,47 @@
+@use "../../utilities/variables" as ut;
+
+.singles {
+  display: flex;
+  gap: 30px;
+  margin-top: 90px;
+  padding: 0px 150px;
+}
+
+.single {
+  &__title {
+    font-size: 23px;
+    color: ut.$blue-color;
+    font-weight: 700;
+  }
+
+  &__author {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 150px;
+}
+
+.nav-previous {
+  a {
+    text-decoration: none;
+  }
+}
+
+.nav-next {
+  a {
+    text-decoration: none;
+  }
+}
+
+div#comments {
+  padding: 0px 150px;
+}

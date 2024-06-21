@@ -1,0 +1,137 @@
+@use "../../utilities/variables" as ut;
+
+.post {
+  margin-top: 100px;
+  padding: 0px 150px;
+  display: flex;
+  gap: 50px;
+
+  &__blog {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  &__item {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+
+  &__img {
+    img {
+      border-radius: 8px;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+      color: ut.$blue-color;
+    }
+  }
+
+  &__author {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.wp-block-search__inside-wrapper {
+  //   padding: 8px 15px;
+  //   border-radius: 6px;
+  //   background-color: white;
+  //   box-shadow: ;
+}
+
+input#wp-block-search__input-1 {
+  border: none;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.248);
+}
+
+ul.wp-block-latest-posts__list.wp-block-latest-posts {
+  margin: 0;
+  border-radius: 6px;
+  border: 1px solid rgba(128, 128, 128, 0.281);
+  li {
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.281);
+    a {
+      color: gray;
+      text-decoration: none;
+
+      &:hover {
+        color: ut.$blue-color;
+      }
+    }
+  }
+}
+
+ol.wp-block-latest-comments {
+  padding: 0;
+  margin: 0;
+  border-radius: 6px;
+  border: 1px solid rgba(128, 128, 128, 0.281);
+  li {
+    &:hover {
+      color: ut.$blue-color;
+    }
+    margin: 0;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.281);
+    a {
+      color: gray;
+      text-decoration: none;
+    }
+  }
+}
+
+ul.wp-block-archives-list.wp-block-archives {
+  padding: 0;
+  margin: 0;
+  border-radius: 6px;
+  border: 1px solid rgba(128, 128, 128, 0.281);
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.281);
+    a {
+      color: gray;
+      text-decoration: none;
+
+      &:hover {
+        color: ut.$blue-color;
+      }
+    }
+  }
+}
+
+ul.wp-block-categories-list.wp-block-categories {
+  padding: 0;
+  margin: 0;
+  border-radius: 6px;
+  border: 1px solid rgba(128, 128, 128, 0.281);
+  li {
+    list-style-type: none;
+
+    margin: 0;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.281);
+    a {
+      color: gray;
+      text-decoration: none;
+
+      &:hover {
+        color: ut.$blue-color;
+      }
+    }
+  }
+}
